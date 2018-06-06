@@ -15,6 +15,19 @@ namespace WebConvertor.Controllers
             return View();
         }
 
+        [HttpPost][HttpGet]
+        public IActionResult ConvertKilometersToMiles(double kilometer)
+        {
+            ViewData["miles"] = Test.TestConverter.GivenConvertKilometersToMiles(kilometer);
+
+            return View("Index");
+        }
+        [HttpPost][HttpGet]
+        public IActionResult ConvertMilesToKilometers(double miles)
+        {
+            double kilometer = Test.TestConverter.GivenConvertKilometersToMiles(miles);
+            return View(kilometer);
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

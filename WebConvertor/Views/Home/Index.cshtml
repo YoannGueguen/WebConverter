@@ -1,17 +1,19 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Index";
 }
     <header>Converteur</header>
-    <div class="row">
-        <label class="col-lg-2">Kilomètre to miles :</label>
-        <input class="col-lg-2 col-lg-offset-1" type="text" name="KilometerTo" />
-        <input class="col-lg-2 col-lg-offset-1" type="text" name="ToMiles" disabled="disabled" />
-        <button class="btn btn-info col-lg-2  col-lg-offset-1" type="button">Convertir</button>
-    </div>
-
-    <div class="row">
-        <label class="col-lg-2">Miles to kilomètre :</label>
-        <input class="col-lg-2 col-lg-offset-1" type="text" name="MilesTo" />
-        <input class="col-lg-2 col-lg-offset-1" type="text" name="ToKilometer" disabled="disabled" />
-        <button class="btn btn-info col-lg-2  col-lg-offset-1" type="button" onclick="GivenConvertMilesToKilometers" >Convertir</button>
-    </div>
+    <form asp-controller="HomeController" asp-action="ConvertKilometersToMiles" method="post">
+        <div class="row">
+            <label class="col-lg-2">Kilomètre to miles :</label>
+            <input class="col-lg-2 col-lg-offset-1" type="text" name="KilometerTo" inputmode="numeric" />
+            <input class="col-lg-2 col-lg-offset-1" type="text" value="@ViewData["miles"]" name="ToMiles" disabled="disabled" />
+            <button class="btn btn-info col-lg-2  col-lg-offset-1" type="submit">Convertir</button>
+        </div>
+    </form>
+        @*<div class="row">
+            <label class="col-lg-2">Miles to kilomètre :</label>
+            <input class="col-lg-2 col-lg-offset-1" type="text" name="MilesTo" inputmode="numeric" />
+            <input class="col-lg-2 col-lg-offset-1" type="text" name="ToKilometer" disabled="disabled" />
+            <button class="btn btn-info col-lg-2  col-lg-offset-1" asp-action="ConvertMilesToKilometers" type="button">Convertir</button>
+        </div>*@

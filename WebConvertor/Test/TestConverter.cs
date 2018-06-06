@@ -14,7 +14,7 @@ namespace WebConvertor.Test
             return miles * 1.609344;
         }
 
-        public double GivenConvertKilometersToMiles(double kilometers)
+        public static double GivenConvertKilometersToMiles(double kilometers)
         {
             return kilometers * 0.621371192;
         }
