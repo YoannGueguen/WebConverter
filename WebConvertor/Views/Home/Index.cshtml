@@ -1,20 +1,20 @@
-﻿
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Index";
 }
-    <header>Converteur</header>
-    <form asp-controller="HomeController" asp-action="ConwvertKilometersToMiles" method="post">
-        <div class="row">
-            <label class="col-lg-2">Kilometer to miles :</label>
-            <input class="col-lg-2 col-lg-offset-1" type="text" name="KilometerTo" inputmode="numeric" />
-            <input class="col-lg-2 col-lg-offset-1" type="text" value="@ViewData["miles"]" name="ToMiles" disabled="disabled" />
-            <button class="btn btn-info col-lg-2  col-lg-offset-1" asp-action="ConvertMilesToKilometers" type="button" onclick="TestConverter.cs">Convertir</button>
-            @*<button class="btn btn-info col-lg-2  col-lg-offset-1" type="submit">Convertir</button>*@
-        </div>
-    </form>
-        @*<div class="row">
-            <label class="col-lg-2">Miles to kilometer :</label>
-            <input class="col-lg-2 col-lg-offset-1" type="text" name="MilesTo" inputmode="numeric" />
-            <input class="col-lg-2 col-lg-offset-1" type="text" name="ToKilometer" disabled="disabled" />
-            <button class="btn btn-info col-lg-2  col-lg-offset-1" asp-action="ConvertMilesToKilometers" type="button">Convertir</button>
-        </div>*@
+<header>Converteur</header>
+<form asp-controller="HomeController" asp-action="ConwvertKilometersToMiles" method="post">
+    <div class="row">
+        <label class="col-lg-2">Kilometer to miles :</label>
+        <input class="col-lg-2 col-lg-offset-1" type="text" name="KilometerTo" inputmode="numeric" />
+        <input class="col-lg-2 col-lg-offset-1" type="text" value="" name="ToMiles" disabled="disabled" />
+        @*<button class="btn btn-info col-lg-2  col-lg-offset-1" asp-action="ConvertMilesToKilometers" type="button" onclick="TestConverter.cs">Convertir</button>*@
+        <button class="btn btn-info col-lg-2  col-lg-offset-1" type="submit">Convertir</button>
+    </div>
+</form>
+@*<div class="row">
+        <label class="col-lg-2">Miles to kilometer :</label>
+        <input class="col-lg-2 col-lg-offset-1" type="text" name="MilesTo" inputmode="numeric" />
+        <input class="col-lg-2 col-lg-offset-1" type="text" name="ToKilometer" disabled="disabled" />
+        <button class="btn btn-info col-lg-2  col-lg-offset-1" asp-action="ConvertMilesToKilometers" type="button">Convertir</button>
+    </div>*@
