@@ -5,8 +5,7 @@ using System.Collections.Generic;
 
 namespace ConvertConsole
 {
-    //Cette classe permet d'afficher dans notre console tout ce qui est convertit. Il va permettre 
-    //d'afficher les résultats.
+    //This class allows to display in our console everything that is converted.It will display the results.
     class Program
     {
         static void Main(string[] args)

@@ -8,12 +8,13 @@ namespace DomainModel
 {
     public class Converter
     {
-        //Dans cette classe, les propriétés sont déclarées avec leur valeur. Le convertId est en int car il déclare
-        //que c'est un type intégral qui stock les valeurs en fonction des tailles. Le type string du TypeOfConvert
-        //désigne le fait que le type est déclaré comme étant un simple texte. NumbertoConvert et NumberConverted
-        //sont en double afin de désigner qu'ils sont des types simples qui stockent des valeur à virgule flottantes.
-        //Get;set permet de déclarer les propriétés qui seront utilisées dans le projet.
-        [Key]
+        // In this class, properties are declared with their value.The convertId is int because it declares that it is an 
+        //integral type that stores values ​​based on sizes.The TypeOfConvert string type refers to the fact that the type 
+        //is declared as a simple text.NumbertoConvert and NumberConverted are duplicates to designate that they are 
+        //simple types that store floating-point values. Get; set is used to declare the properties that will be used in 
+        //the project.
+
+     [Key]
         public int ConvertId { get; set; }
 
         public string TypeOfConvert { get; set; }
