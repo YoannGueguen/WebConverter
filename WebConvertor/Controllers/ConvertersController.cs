@@ -113,6 +113,21 @@ namespace WebConvertor.Controllers
             {
                 try
                 {
+                    switch (converter.TypeOfConvert)
+                    {
+                        case "KilometersToMiles":
+                            converter.NumberConverted = Test.TestConverter.GivenConvertKilometersToMiles(converter.NumbertoConvert);
+                            break;
+                        case "MilestoKilometers":
+                            converter.NumberConverted = Test.TestConverter.GivenConvertMilesToKilometers(converter.NumbertoConvert);
+                            break;
+                        case "KilometersToInch":
+                            converter.NumberConverted = Test.TestConverter.GivenConvertKilometersToInch(converter.NumbertoConvert);
+                            break;
+                        case "InchToKilometers":
+                            converter.NumberConverted = Test.TestConverter.GivenConvertInchToKilometers(converter.NumbertoConvert);
+                            break;
+                    }
                     _context.Update(converter);
                     await _context.SaveChangesAsync();
                 }

@@ -15,18 +15,18 @@
             <input type="hidden" asp-for="ConvertId" />
             <div class="form-group">
                 <label asp-for="TypeOfConvert" class="control-label"></label>
-                <input asp-for="TypeOfConvert" class="form-control" />
+                <select asp-for="TypeOfConvert" class="form-control">
+                    <option>KilometersToMiles</option>
+                    <option>MilestoKilometers</option>
+                    <option>KilometersToInch</option>
+                    <option>InchToKilometers</option>
+                </select>
                 <span asp-validation-for="TypeOfConvert" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NumbertoConvert" class="control-label"></label>
                 <input asp-for="NumbertoConvert" class="form-control" />
                 <span asp-validation-for="NumbertoConvert" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumberConverted" class="control-label"></label>
-                <input asp-for="NumberConverted" class="form-control" />
-                <span asp-validation-for="NumberConverted" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
