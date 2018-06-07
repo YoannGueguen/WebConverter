@@ -724,7 +724,9 @@ try {
 			var j = target.length,
 				i = 0;
 			// Can't trust NodeList.length
-			while ( (target[j++] = els[i++]) ) {}
+            while ((target[j++] = els[i++])) {
+                return true;
+            }
 			target.length = j - 1;
 		}
 	};
@@ -3031,7 +3033,9 @@ jQuery.fn.extend( {
 } );
 
 function sibling( cur, dir ) {
-	while ( ( cur = cur[ dir ] ) && cur.nodeType !== 1 ) {}
+    while ((cur = cur[dir]) && cur.nodeType !== 1) {
+        return true;
+    }
 	return cur;
 }
 
@@ -6908,7 +6912,7 @@ jQuery.fn.extend( {
 			clearQueue = type;
 			type = undefined;
 		}
-		if ( clearQueue && type !== false ) {
+		if ( clearQueue && type != false ) {
 			this.queue( type || "fx", [] );
 		}
 

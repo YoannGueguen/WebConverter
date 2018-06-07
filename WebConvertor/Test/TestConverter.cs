@@ -7,6 +7,10 @@ namespace WebConvertor.Test
 {
     public class TestConverter
     {
+        protected TestConverter()
+        {
+
+        }
         //25/05/2018 Convert km and miles
 
      //ConverterMilesToKilometer_1.609344 - Formule de calcul qui permet de faire la conversion des miles en 

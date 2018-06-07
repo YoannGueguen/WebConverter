@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace ConvertConsole
 {
     //This class allows to display in our console everything that is converted.It will display the results.
-    class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
@@ -27,9 +27,14 @@ namespace ConvertConsole
             using (ConverterContext context = new ConverterContext())
             {
                 //drop create database always
-                //context.Database.EnsureDeleted();
-                context.Database.EnsureCreated();
-
+                try
+                {
+                    context.Database.EnsureDeleted();
+                }
+                catch (Exception)
+                {
+                    context.Database.EnsureCreated();
+                }
                 #region Converters
                 var converters = new List<Converter>()
                 {

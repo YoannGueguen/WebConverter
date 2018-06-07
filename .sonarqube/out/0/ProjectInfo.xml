@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>WebConvertor</ProjectName>
+  <ProjectName>DomainModel</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>502ca0d5-d366-40cb-97da-8fc70711f33f</ProjectGuid>
-  <FullPath>C:\Users\yoann\Source\Repos\WebConverter\WebConvertor\WebConvertor.csproj</FullPath>
+  <ProjectGuid>9ddc3e9a-66da-4918-9fac-5fac686f805a</ProjectGuid>
+  <FullPath>C:\Users\yoann\Source\Repos\WebConverter\DomainModel\DomainModel.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\yoann\Source\Repos\WebConverter\.sonarqube\out\0\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePath">C:\Users\yoann\Source\Repos\WebConverter\WebConvertor\bin\Debug\netcoreapp2.0\WebConvertor.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePath">C:\Users\yoann\Source\Repos\WebConverter\DomainModel\bin\Debug\netcoreapp2.0\DomainModel.dll.RoslynCA.json</Property>
     <Property Name="sonar.cs.analyzer.projectOutPath">C:\Users\yoann\Source\Repos\WebConverter\.sonarqube\out\0</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>

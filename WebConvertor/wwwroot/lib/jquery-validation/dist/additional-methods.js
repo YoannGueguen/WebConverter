@@ -393,11 +393,7 @@ $.validator.addMethod("dateITA", function(value, element) {
 		xdata = new Date(Date.UTC(aaaa, mm - 1, gg, 12, 0, 0, 0));
 		if ( ( xdata.getUTCFullYear() === aaaa ) && ( xdata.getUTCMonth () === mm - 1 ) && ( xdata.getUTCDate() === gg ) ) {
 			check = true;
-		} else {
-			check = false;
 		}
-	} else {
-		check = false;
 	}
 	return this.optional(element) || check;
 }, $.validator.messages.date);

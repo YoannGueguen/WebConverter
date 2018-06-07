@@ -40,7 +40,7 @@ namespace WebConvertor.Controllers
                 return NotFound();
             }
 
-            return View(converter);
+            return RedirectToAction(nameof(Details) + "/" + id);
         }
 
         // GET: Converters/Create
@@ -79,7 +79,7 @@ namespace WebConvertor.Controllers
             {
                 return NotFound();
             }
-            return View(converter);
+            return RedirectToAction(nameof(Edit) + "/" + id);
         }
 
         // POST: Converters/Edit/5
@@ -133,7 +133,7 @@ namespace WebConvertor.Controllers
                 return NotFound();
             }
 
-            return View(converter);
+            return RedirectToAction(nameof(Delete) + "/" + id);
         }
 
         // POST: Converters/Delete/5
@@ -153,7 +153,7 @@ namespace WebConvertor.Controllers
         }
         private void ExecuteTypeOfConverter(string typeOfConverter, Converter converter)
         {
-            switch (converter.TypeOfConvert)
+            switch (typeOfConverter)
             {
                 case "KilometerToMiles":
                     converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);

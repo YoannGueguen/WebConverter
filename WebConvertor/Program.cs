@@ -10,12 +10,8 @@ using Microsoft.Extensions.Logging;
 
 namespace WebConvertor
 {
-    public class Program
+    public static class Program
     {
-        public Program()
-        {
-
-        }
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
