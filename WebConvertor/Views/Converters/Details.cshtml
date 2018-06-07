@@ -1,0 +1,36 @@
+﻿@model DomainModel.Converter
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Converter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfConvert)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfConvert)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumbertoConvert)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumbertoConvert)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberConverted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumberConverted)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ConvertId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
