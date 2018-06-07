@@ -9,48 +9,124 @@ namespace WebConvertor.Test
     {
         //25/05/2018 Convert km and miles
 
-     //ConverterMilesToKilometer_1.609344 - Formule de calcul qui permet de faire la conversion des miles en 
-     //kilomètre. L'unité de mesure est décrite dans la formule afin de préciser à quelle formule mathématique correspond
-     //le code. La valeur de conversion est présente dans la formule qui est déclarée en static.
+        //ConverterMilesToKilometer_1.609344 - The calculation formula makes it possible to convert miles to kilometers.
+        //The unit of measurement is described in the formula to specify which mathematical formula corresponds to the 
+        //code. The conversion value is present in the formula that is declared in static.
+
+        //Unit tests are carried out to verify the correct operation of the codes. With the AAA method. You have to define objects
+        //and variables. Then execute the code that we want to test to verify that the result is the expected one.
         public static double ConverterMilesToKilometer(double miles)
         {
-            return miles * 1.609344;
+            //Arrange
+            double milesToKilometer = 1.609344;
+
+            double resultMilesToKilometer = 0;
+
+            //Act
+            resultMilesToKilometer = miles * milesToKilometer;
+
+            //Assert
+            return resultMilesToKilometer;
         }
-        //ConverterKilometerToMiles_0.621371192 - Cette formule de calcul permet de convertie des kilomètres en miles.
+        //ConverterKilometerToMiles_0.621371192 - This calculation formula allows you to convert kilometers to miles.
         public static double ConverterKilometerToMiles(double kilometer)
         {
-            return kilometer * 0.621371192;
+            //Arrange
+            double kilometerToMiles = 0.621371192;
+
+            double resultKilometerToMiles = 0;
+
+            //Act
+            resultKilometerToMiles = kilometer * kilometerToMiles;
+
+            //Assert
+            return resultKilometerToMiles;
         }
-        //ConverterKilometerToInch_39370.0787401578 - Cette formule de calcul permet de convertir des kilomètres en
-        //pouce.
+
+        //ConverterKilometerToInch_39370.0787401578 - This calculation formula allows you to convert kilometers to inches.
         public static double ConverterKilometerToInch(double kilometer)
         {
-            return kilometer * 39370.0787401578;
+            //Arrange
+            double kilometerToInch = 39370.0787401578;
+
+            double resultKilometerToInch = 0;
+
+            //Act
+            resultKilometerToInch = kilometer * kilometerToInch;
+
+            //Assert
+            return resultKilometerToInch;
         }
-        //ConverterInchToKilometer_0.0000254 - Cette formule de calcul permet de convertir des pouces en kilomètres.
+        //ConverterInchToKilometer_0.3048 - This calculation formula allows you to convert inches to kilometers.
         public static double ConverterInchToKilometer(double inch)
         {
-            return inch * 0.0000254;
+            //Arrange
+            double inchToKilometer = 0.3048;
+
+            double resultInchToKilometer = 0;
+
+            //Act
+            resultInchToKilometer = inch * inchToKilometer;
+
+            //Assert
+            return resultInchToKilometer;
         }
-        //0,3048
-        public static double ConverterKilometerToFoot(double kilometer)
-        {
-            return kilometer * 0.0000254;
-        }
-        //3280,839895013128
+        //ConverterFootToKilometer_3280.0839895013128 - This calculation formula allows you to convert foot to kilometers.
         public static double ConverterFootToKilometer(double foot)
         {
-            return foot * 3280.839895013128;
+            //Arrange
+            double footToKilometer = 3280.839895013128;
+
+            double resultFootToKilometer = 0;
+
+            //Act
+            resultFootToKilometer = foot * footToKilometer;
+
+            //Assert
+            return resultFootToKilometer;
         }
-        //1093,61329834
+        //ConverterKilometerToFoot_0.0000254 - This calculation formula allows you to convert kilometers to foot.
+        public static double ConverterKilometerToFoot(double kilometer)
+        {
+            //Arrange
+            double kilometerToFoot = 0.0000254;
+
+            double resultKilometerToFoot = 0;
+
+            //Act
+            resultKilometerToFoot = kilometer * kilometerToFoot;
+
+            //Assert
+            return resultKilometerToFoot;
+        }
+
+        //ConverterKilometerToYard_1093.61329834 - This calculation formula allows you to convert kilometers to yard.
         public static double ConverterKilometerToYard(double kilometer)
         {
-            return kilometer * 1093.61329834;
+            //Arrange
+            double kilometerToYard = 1093.61329834;
+
+            double resultKilometerToYard = 0;
+
+            //Act
+            resultKilometerToYard = kilometer * kilometerToYard;
+
+            //Assert
+            return resultKilometerToYard;
         }
-        //0,0009144
-        public static double ConverterYardToKilometer(double foot)
+        //ConverterYardToKilometer_0.0009144 - This calculation formula allows you to convert yard to kilometers.
+        public static double ConverterYardToKilometer(double yard)
         {
-            return foot * 0.0009144;
+            //Arrange
+            double yardToKilometer = 0.0009144;
+
+            double resultYardToKilometer = 0;
+
+            //Act
+            resultYardToKilometer = yard * yardToKilometer;
+
+            //Assert
+            return resultYardToKilometer;
         }
     }
 }
