@@ -14,12 +14,12 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="TypeOfConvert" class="control-label"></label>
-                <ul asp-for="TypeOfConvert" class="form-control">
-                    <li>KilometersToMiles</li>
-                    <li>MilestoKilometers</li>
-                    <li>KilometersToInch</li>
-                    <li>InchToKilometers</li>
-                </ul>
+                <select asp-for="TypeOfConvert" class="form-control">
+                    <option>KilometersToMiles</option>
+                    <option>MilestoKilometers</option>
+                    <option>KilometersToInch</option>
+                    <option>InchToKilometers</option>
+                </select>
                 <span asp-validation-for="TypeOfConvert" class="text-danger"></span>
             </div>
             <div class="form-group">

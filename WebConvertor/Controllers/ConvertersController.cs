@@ -73,7 +73,6 @@ namespace WebConvertor.Controllers
                         converter.NumberConverted = Test.TestConverter.GivenConvertInchToKilometers(converter.NumbertoConvert);
                         break;
                 }
-                
 
                 _context.Add(converter);
                 await _context.SaveChangesAsync();
