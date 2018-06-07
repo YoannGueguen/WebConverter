@@ -12,24 +12,24 @@ namespace WebConvertor.Test
      //Converter_miles_to_kilometer_1.609344 - Formule de calcul qui permet de faire la conversion des miles en 
      //kilomètre. L'unité de mesure est décrite dans la formule afin de préciser à quelle formule mathématique correspond
      //le code. La valeur de conversion est présente dans la formule qui est déclarée en static.
-        public static double GivenConvertMilesToKilometers(double miles)
+        public static double ConverterMilesToKilometer(double miles)
         {
             return miles * 1.609344;
         }
         //Converter_kilometer_to_miles_0.621371192 - Cette formule de calcul permet de faire l'inverse de la formule du
         //dessus : il permet de convertir des kilomètres en miles.
-        public static double GivenConvertKilometersToMiles(double kilometers)
+        public static double ConverterKilometerToMiles(double kilometers)
         {
             return kilometers * 0.621371192;
         }
         //Converter_kilometer_to_inch_39370.0787401578 - Cette formule de calcul permet de convertir des kilomètres en
         //pouce.
-        public static double GivenConvertKilometersToInch(double kilometers)
+        public static double ConverterKilometerToInch(double kilometers)
         {
             return kilometers * 39370.0787401578;
         }
         //Converter_inch_to_kilometer_0.0000254 - Cette formule de calcul permet de convertir des pouces en kilomètres.
-        public static double GivenConvertInchToKilometers(double inch)
+        public static double ConverterInchToKilometer(double inch)
         {
             return inch * 0.0000254;
         }

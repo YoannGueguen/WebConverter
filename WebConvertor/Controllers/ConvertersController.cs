@@ -61,16 +61,16 @@ namespace WebConvertor.Controllers
                 switch (converter.TypeOfConvert)
                 {
                     case "KilometersToMiles":
-                        converter.NumberConverted = Test.TestConverter.GivenConvertKilometersToMiles(converter.NumbertoConvert);
+                        converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
                         break;
                     case "MilestoKilometers":
-                        converter.NumberConverted = Test.TestConverter.GivenConvertMilesToKilometers(converter.NumbertoConvert);
+                        converter.NumberConverted = Test.TestConverter.ConverterMilesToKilometer(converter.NumbertoConvert);
                         break;
                     case "KilometersToInch":
-                        converter.NumberConverted = Test.TestConverter.GivenConvertKilometersToInch(converter.NumbertoConvert);
+                        converter.NumberConverted = Test.TestConverter.ConverterKilometerToInch(converter.NumbertoConvert);
                         break;
                     case "InchToKilometers":
-                        converter.NumberConverted = Test.TestConverter.GivenConvertInchToKilometers(converter.NumbertoConvert);
+                        converter.NumberConverted = Test.TestConverter.ConverterInchToKilometer(converter.NumbertoConvert);
                         break;
                 }
 
@@ -116,16 +116,16 @@ namespace WebConvertor.Controllers
                     switch (converter.TypeOfConvert)
                     {
                         case "KilometersToMiles":
-                            converter.NumberConverted = Test.TestConverter.GivenConvertKilometersToMiles(converter.NumbertoConvert);
+                            converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
                             break;
                         case "MilestoKilometers":
-                            converter.NumberConverted = Test.TestConverter.GivenConvertMilesToKilometers(converter.NumbertoConvert);
+                            converter.NumberConverted = Test.TestConverter.ConverterMilesToKilometer(converter.NumbertoConvert);
                             break;
                         case "KilometersToInch":
-                            converter.NumberConverted = Test.TestConverter.GivenConvertKilometersToInch(converter.NumbertoConvert);
+                            converter.NumberConverted = Test.TestConverter.ConverterKilometerToInch(converter.NumbertoConvert);
                             break;
                         case "InchToKilometers":
-                            converter.NumberConverted = Test.TestConverter.GivenConvertInchToKilometers(converter.NumbertoConvert);
+                            converter.NumberConverted = Test.TestConverter.ConverterInchToKilometer(converter.NumbertoConvert);
                             break;
                     }
                     _context.Update(converter);
