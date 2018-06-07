@@ -22,12 +22,13 @@ namespace WebConvertor.Test
         {
             return kilometers * 0.621371192;
         }
-        //Converter_kilometer_to_inch_39370.0787401578
+        //Converter_kilometer_to_inch_39370.0787401578 - Cette formule de calcul permet de convertir des kilomètres en
+        //pouce.
         public static double GivenConvertKilometersToInch(double kilometers)
         {
             return kilometers * 39370.0787401578;
         }
-        //Converter_inch_to_kilometer_0.0000254
+        //Converter_inch_to_kilometer_0.0000254 - Cette formule de calcul permet de convertir des pouces en kilomètres.
         public static double GivenConvertInchToKilometers(double inch)
         {
             return inch * 0.0000254;

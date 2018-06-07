@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace ConvertConsole
 {
+    //Cette classe permet d'afficher 
     class Program
     {
         static void Main(string[] args)
