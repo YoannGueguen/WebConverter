@@ -15,11 +15,16 @@
             <div class="form-group">
                 <label asp-for="TypeOfConvert" class="control-label"></label>
                 <select asp-for="TypeOfConvert" class="form-control">
-                    <option>KilometersToMiles</option>
-                    <option>MilestoKilometers</option>
-                    <option>KilometersToInch</option>
-                    <option>InchToKilometers</option>
+                    <option>KilometerToMiles</option>
+                    <option>MilesToKilometer</option>
+                    <option>KilometerToInch</option>
+                    <option>InchToKilometer</option>
+                    <option>KilometerToFoot</option>
+                    <option>FootToKilometer</option>
+                    <option>KilometerToYard</option>
+                    <option>YardToKilometer</option>
                 </select>
+
                 <span asp-validation-for="TypeOfConvert" class="text-danger"></span>
             </div>
             <div class="form-group">

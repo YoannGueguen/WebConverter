@@ -58,22 +58,7 @@ namespace WebConvertor.Controllers
         {
             if (ModelState.IsValid)
             {
-                switch (converter.TypeOfConvert)
-                {
-                    case "KilometersToMiles":
-                        converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
-                        break;
-                    case "MilestoKilometers":
-                        converter.NumberConverted = Test.TestConverter.ConverterMilesToKilometer(converter.NumbertoConvert);
-                        break;
-                    case "KilometersToInch":
-                        converter.NumberConverted = Test.TestConverter.ConverterKilometerToInch(converter.NumbertoConvert);
-                        break;
-                    case "InchToKilometers":
-                        converter.NumberConverted = Test.TestConverter.ConverterInchToKilometer(converter.NumbertoConvert);
-                        break;
-                }
-
+                ExecuteTypeOfConverter(converter.TypeOfConvert, converter);
                 _context.Add(converter);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -113,21 +98,7 @@ namespace WebConvertor.Controllers
             {
                 try
                 {
-                    switch (converter.TypeOfConvert)
-                    {
-                        case "KilometersToMiles":
-                            converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
-                            break;
-                        case "MilestoKilometers":
-                            converter.NumberConverted = Test.TestConverter.ConverterMilesToKilometer(converter.NumbertoConvert);
-                            break;
-                        case "KilometersToInch":
-                            converter.NumberConverted = Test.TestConverter.ConverterKilometerToInch(converter.NumbertoConvert);
-                            break;
-                        case "InchToKilometers":
-                            converter.NumberConverted = Test.TestConverter.ConverterInchToKilometer(converter.NumbertoConvert);
-                            break;
-                    }
+                    ExecuteTypeOfConverter(converter.TypeOfConvert, converter);
                     _context.Update(converter);
                     await _context.SaveChangesAsync();
                 }
@@ -179,6 +150,36 @@ namespace WebConvertor.Controllers
         private bool ConverterExists(int id)
         {
             return _context.Converters.Any(e => e.ConvertId == id);
+        }
+        private void ExecuteTypeOfConverter(string typeOfConverter, Converter converter)
+        {
+            switch (converter.TypeOfConvert)
+            {
+                case "KilometerToMiles":
+                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    break;
+                case "MilesToKilometer":
+                    converter.NumberConverted = Test.TestConverter.ConverterMilesToKilometer(converter.NumbertoConvert);
+                    break;
+                case "KilometerToInch":
+                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToInch(converter.NumbertoConvert);
+                    break;
+                case "InchToKilometer":
+                    converter.NumberConverted = Test.TestConverter.ConverterInchToKilometer(converter.NumbertoConvert);
+                    break;
+                case "KilometerToFoot":
+                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    break;
+                case "FootToKilometer":
+                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    break;
+                case "KilometerToYard":
+                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    break;
+                case "YardToKilometer":
+                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    break;
+            }
         }
     }
 }
