@@ -13,14 +13,15 @@ namespace WebConvertor.Controllers
         public IActionResult Index()
         {
             return View();
+
         }
 
         [HttpPost][HttpGet]
         public IActionResult ConvertKilometersToMiles(double kilometer)
         {
             ViewData["miles"] = Test.TestConverter.GivenConvertKilometersToMiles(kilometer);
-
-            return View("Index");
+            return RedirectToAction("Index");
+            //return View("Index");
         }
         [HttpPost][HttpGet]
         public IActionResult ConvertMilesToKilometers(double miles)
