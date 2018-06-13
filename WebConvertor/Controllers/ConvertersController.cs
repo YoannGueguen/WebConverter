@@ -156,28 +156,28 @@ namespace WebConvertor.Controllers
             switch (typeOfConverter)
             {
                 case "KilometerToMiles":
-                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenMilesConverterKilometerToMiles_0_621371192(converter.NumbertoConvert);
                     break;
                 case "MilesToKilometer":
-                    converter.NumberConverted = Test.TestConverter.ConverterMilesToKilometer(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenKilometerConverterMilesToKilometer_1_609344(converter.NumbertoConvert);
                     break;
                 case "KilometerToInch":
-                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToInch(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenInchConverterKilometerToInch_39370_0787401578(converter.NumbertoConvert);
                     break;
                 case "InchToKilometer":
-                    converter.NumberConverted = Test.TestConverter.ConverterInchToKilometer(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenKilometerConverterInchToKilometer_0_3048(converter.NumbertoConvert);
                     break;
                 case "KilometerToFoot":
-                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenFootConverterKilometerToFoot_0_0000254(converter.NumbertoConvert);
                     break;
                 case "FootToKilometer":
-                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenKilometerConverterFootToKilometer_3280_0839895013128(converter.NumbertoConvert);
                     break;
                 case "KilometerToYard":
-                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenYardConverterKilometerToYard_1093_61329834(converter.NumbertoConvert);
                     break;
                 case "YardToKilometer":
-                    converter.NumberConverted = Test.TestConverter.ConverterKilometerToMiles(converter.NumbertoConvert);
+                    converter.NumberConverted = Test.TestConverter.GivenKilometerConverterYardToKilometer_0_0009144(converter.NumbertoConvert);
                     break;
             }
         }
