@@ -22,7 +22,7 @@ namespace WebConvertor.Test
         public static double GivenKilometerConverterMilesToKilometer_1_609344(double miles)
         {
             //Arrange
-            double milesToKilometer = 1.609344;
+            const double milesToKilometer = 1.609344;
 
             double resultMilesToKilometer = 0;
 
